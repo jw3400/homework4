@@ -90,9 +90,9 @@ class SumofNumbers {
 	
 	}
 
-	
 		public void cal(int answer1) {
-
+			int cal = 0;
+			
 
 		
 		}
