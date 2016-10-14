@@ -136,11 +136,11 @@ class MaxAndMin {
 						System.out.println("0~100사이의 숫자를 입력해야합니다. 다시 입력하십시오.");
 					}
 
-					/* if(String.valueOf(answer2[i]).equals("Q") ||String.valueOf( answer2[i]).equals("q")) 
+					 if(String.valueOf(answer2[i]).equals("Q") ||String.valueOf( answer2[i]).equals("q")) 
 					{
 						cal2(answer2);
 						break;	
-					}*/
+					}
 			}		
 			input.close();
 		
