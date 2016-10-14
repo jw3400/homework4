@@ -114,7 +114,61 @@ class MaxAndMin {
 	
 	public void question2() {
 		
+
+			System.out.println("### 최대값/최소값구하기  ###");
+			Scanner input = new Scanner(System.in);
+
+			int size; 
+			System.out.print("원하시는 배열의 크기를 입력하세요 : ");
+			size = input.nextInt();
+			if(size < 2) {
+				System.out.print("배열의 크기는 최소 2이상이어야 합니다.");
+				System.exit(0);
+				}
+			int[] answer2 = new int[size];
+			
+			for(int i=0; i < answer2.length; i++)
+			{
+					System.out.print("0~100사이의 숫자를 입력하세요(종료:Q) >>> ");						
+					answer2[i] = input.nextInt();
+					
+					if(answer2[i]<0 && answer2[i]>100)
+					{
+						System.out.println("0~100사이의 숫자를 입력해야합니다. 다시 입력하십시오.");
+					}
+
+					 if(String.valueOf(answer2[i]).equals("Q") ||String.valueOf( answer2[i]).equals("q")) 
+					{
+						cal2(answer2);
+						break;	
+					}
+			}		
+			input.close();
+		
 	}
+	
+		public void cal2(int answer2[]) {
+			
+			
+			int max_num, min_num, tmp;
+			for(int i=0; i<answer2.length; i++)
+			{
+				for(int j=0; j<answer2.length-1; j++)
+				{
+					if(answer2[j] > answer2[j+1]) {
+							tmp = answer2[j];
+							answer2[j] = answer2[j+1];
+							answer2[j+1] = tmp;
+					}
+				}
+					
+			}
+			max_num = answer2[answer2.length-1];
+			min_num = answer2[0];
+			System.out.println("가장 큰 수는 " + max_num + " 이고, 가장 작은 수는 " + min_num + " 입니다!");
+			
+			
+		}
 	
 }
 
