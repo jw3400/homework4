@@ -35,37 +35,37 @@ public class ExamForWhile {
 	 public void count(int select) {
 
 		 		if(select == 1) {
-		 			System.out.print("1번 호출");
-				    SumofNumbers cal1 = new SumofNumbers();
+		 			System.out.println("1번 호출");
+				    SumOfNumbers cal1 = new SumOfNumbers();
 				    cal1.question1();
 		 		}
 			
 		 		else if(select == 2) {
-		 			System.out.print("2번 호출");
+		 			System.out.println("2번 호출");
 		 			MaxAndMin cal2 = new MaxAndMin();
 		 			cal2.question2();
 		 		}
 			
 		 		else if(select == 3) {
-		 			System.out.print("3번 호출");
+		 			System.out.println("3번 호출");
 		 			SumAndAvg cal3 = new SumAndAvg(); 
 		 			cal3.question3();
 		 		}
 			
 		 		else if(select == 4) {
-		 			System.out.print("4번 호출");
+		 			System.out.println("4번 호출");
 		 			GuGuDan cal4 = new GuGuDan(); 
 		 			cal4.question4();
 		 		}
 			
 		 		else if(select ==5) {
-		 			System.out.print("5번 호출");
+		 			System.out.println("5번 호출");
 		 			GuGuDan2 cal5 = new GuGuDan2(); 
 		 			cal5.question5();
 		 		}
 			
 		 		else if(select ==6) {  
-		 			System.out.print("6번 호출-종료");
+		 			System.out.println("6번 호출-종료");
 		 			System.exit(0);
 		 		}
 		 		
