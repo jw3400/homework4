@@ -14,7 +14,7 @@ public class MaxAndMin {
 		
 		while(true)
 		{
-			System.out.print("0~100사이의 숫자를 입력하세요(종료:Q) >>> ");						
+			System.out.print("0~100사이의 숫자를 입력하세요(Q:종료) >>> ");						
 			value = input.nextLine();
 	
 			if(value.equalsIgnoreCase("Q")) 
