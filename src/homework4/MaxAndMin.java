@@ -5,7 +5,7 @@ import java.util.*;
 public class MaxAndMin {
 	public void question2() {
 		
-		System.out.println("### ÃÖ´ë°ª/ÃÖ¼Ò°ª±¸ÇÏ±â  ###");
+		System.out.println("### ìµœëŒ€ê°’/ìµœì†Œê°’êµ¬í•˜ê¸°  ###");
 		Scanner input = new Scanner(System.in);
 
 		String value = null;
@@ -14,18 +14,18 @@ public class MaxAndMin {
 		
 		while(true)
 		{
-			System.out.print("0~100»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä(Q:Á¾·á) >>> ");						
+			System.out.print("0~100ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”(Q:ì¢…ë£Œ) >>> ");						
 			value = input.nextLine();
 	
 			if(value.equalsIgnoreCase("Q")) 
 			{
-				System.out.println("°¡Àå Å« ¼ö´Â " + max + "ÀÌ°í, °¡Àå ÀÛÀº ¼ö´Â " + min + "ÀÔ´Ï´Ù.");		
+				System.out.println("ê°€ì¥ í° ìˆ˜ëŠ” " + max + "ì´ê³ , ê°€ì¥ ì‘ì€ ìˆ˜ëŠ” " + min + "ì…ë‹ˆë‹¤.");		
 				break;	
 			}
 			
-			if(!value.matches("^[0-9]*$"))		//¼ıÀÚ°¡ ¾Æ´Ñ ´Ù¸¥ °ÍÀ» ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+			if(!value.matches("^[0-9]*$"))		//ìˆ«ìê°€ ì•„ë‹Œ ë‹¤ë¥¸ ê²ƒì„ ì…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 			{
-				System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+				System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 				continue;
 			}
 			
@@ -33,7 +33,7 @@ public class MaxAndMin {
 								 
 			if(num <0 || num >100)
 			{
-				System.out.println("0~100»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+				System.out.println("0~100ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•´ì•¼í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 				continue;
 			}
 			
@@ -55,6 +55,3 @@ public class MaxAndMin {
 
 
 }
-
-
-

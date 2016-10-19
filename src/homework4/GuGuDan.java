@@ -5,31 +5,31 @@ import java.util.*;
 public class GuGuDan {
 	public void question4() {
 		
-		System.out.println("### ¿øÇÏ´Â ±¸±¸´Ü Ãâ·ÂÇÏ±â  ###");
+		System.out.println("### ì›í•˜ëŠ” êµ¬êµ¬ë‹¨ ì¶œë ¥í•˜ê¸°  ###");
 		Scanner input = new Scanner(System.in);
 		
 		String value = null;
 		
 		while(true){
-				System.out.print("Ãâ·ÂÇÏ°í ½ÍÀº ´Ü(Q:Á¾·á) >>> ");
+				System.out.print("ì¶œë ¥í•˜ê³  ì‹¶ì€ ë‹¨(Q:ì¢…ë£Œ) >>> ");
 				value = input.nextLine();
 				
 				if(value.equalsIgnoreCase("Q")) 
 				{
-					System.out.println("Á¾·áÇÕ´Ï´Ù.");	
+					System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");	
 					System.exit(0);
 				}
 				
-				if(!value.matches("^[0-9]*$"))		//¼ıÀÚ°¡ ¾Æ´Ñ ´Ù¸¥ °ÍÀ» ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+				if(!value.matches("^[0-9]*$"))		//ìˆ«ìê°€ ì•„ë‹Œ ë‹¤ë¥¸ ê²ƒì„ ì…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 				{
-					System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+					System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 					continue;
 				}
 				
 				int num = Integer.parseInt(value);		
 				if(!(num>=2 && num<=9))
 				{
-					System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. 2~9´Ü±îÁö °¡´ÉÇÕ´Ï´Ù.");
+					System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. 2~9ë‹¨ê¹Œì§€ ê°€ëŠ¥í•©ë‹ˆë‹¤.");
 				}
 				else
 				{
@@ -37,10 +37,10 @@ public class GuGuDan {
 					{
 						if(i%2 == 1) 
 						{
-							System.out.print (num + " * " + i + " = " + num*i + "\t");		//°öÇÏ·Á´Â ¼ö°¡ È¦¼öÀÏ ¶§ Tab¹®ÀÚ Àû¿ë 
+							System.out.print (num + " * " + i + " = " + num*i + "\t");		//ê³±í•˜ë ¤ëŠ” ìˆ˜ê°€ í™€ìˆ˜ì¼ ë•Œ Tabë¬¸ì ì ìš©  
 						}
 						else					
-						System.out.println(num + " * " + i + " = " + num*i );					//°öÇÏ·Á´Â ¼ö°¡ Â¦¼öÀÏ ¶§ ÁÙ¹Ù²ŞÀ» Àû¿ë
+						System.out.println(num + " * " + i + " = " + num*i );					//ê³±í•˜ë ¤ëŠ” ìˆ˜ê°€ ì§ìˆ˜ì¼ ë•Œ ì¤„ë°”ê¿ˆì„ ì ìš©
 					}											
 					System.exit(0);
 				}

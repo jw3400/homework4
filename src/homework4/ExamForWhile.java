@@ -8,14 +8,14 @@ public class ExamForWhile {
 	public static void main(String[] args) {
 		
 		System.out.println("*************************************");
-		System.out.println("                       ¹İº¹¹® ¿¬½ÀÇÏ±â1                             ");
+		System.out.println("                          ë°˜ë³µë¬¸ ì—°ìŠµí•˜ê¸°1                              ");
 		System.out.println("*************************************");
-		System.out.println("    1.  1ºÎÅÍ ÀÔ·ÂÇÑ ¼ö±îÁö ´õÇÏ±â ");
-		System.out.println("    2.  ÃÖ´ë°ª/ÃÖ¼Ò°ª ±¸ÇÏ±â");
-		System.out.println("    3.  ÀÔ·Â¹ŞÀº ¼ıÀÚÀÇ ÇÕ°è¿Í Æò±Õ ±¸ÇÏ±â");
-		System.out.println("    4   ¿øÇÏ´Â ±¸±¸´Ü Ãâ·ÂÇÏ±â");
-		System.out.println("    5.  Â¦¼ö´Ü/È¦¼ö´Ü Ãâ·ÂÇÏ±â");
-		System.out.println("    6.  Á¾·áÇÏ±â");
+		System.out.println("    1.  1ë¶€í„° ì…ë ¥í•œ ìˆ˜ê¹Œì§€ ë”í•˜ê¸° ");
+		System.out.println("    2.  ìµœëŒ€ê°’/ìµœì†Œê°’ êµ¬í•˜ê¸°");
+		System.out.println("    3.  ì…ë ¥ë°›ì€ ìˆ«ìì˜ í•©ê³„ì™€ í‰ê·  êµ¬í•˜ê¸°");
+		System.out.println("    4.  ì›í•˜ëŠ” êµ¬êµ¬ë‹¨ ì¶œë ¥í•˜ê¸°");
+		System.out.println("    5.  ì§ìˆ˜ë‹¨/í™€ìˆ˜ë‹¨ ì¶œë ¥í•˜ê¸°");
+		System.out.println("    6.  ì¢…ë£Œí•˜ê¸°");
 		
 		new ExamForWhile().input();
 
@@ -27,58 +27,58 @@ public class ExamForWhile {
 		System.out.print("\n");
 		
 		while(true) {
-			System.out.print("¿øÇÏ´Â ¸Ş´º´Â  ¹«¾ùÀÔ´Ï±î? >>> ");
+			System.out.print("ì›í•˜ëŠ” ë©”ë‰´ëŠ” ë¬´ì—‡ì…ë‹ˆê¹Œ? >>> ");
 			String select = su.nextLine();
  		
-				if(!select.matches("^[0-9]*$"))		//¼ıÀÚ°¡ ¾Æ´Ñ ´Ù¸¥ °ÍÀ» ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+				if(!select.matches("^[0-9]*$"))		//ìˆ«ìê°€ ì•„ë‹Œ ë‹¤ë¥¸ ê²ƒì„ ì…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 				{
-					System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À");
+					System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 					continue;
 				}
 
 				int num = Integer.parseInt(select);
 				if(num == 1) {
-		 			System.out.println("1¹ø È£Ãâ");
+		 			System.out.println("1ë²ˆ í˜¸ì¶œ");
 				    SumOfNumbers cal1 = new SumOfNumbers();
 				    cal1.question1();
 				    break;
 		 		}
 			
 		 		else if(num == 2) {
-		 			System.out.println("2¹ø È£Ãâ");
+		 			System.out.println("2ë²ˆ í˜¸ì¶œ");
 		 			MaxAndMin cal2 = new MaxAndMin();
 		 			cal2.question2();
 		 			break;
 		 		}
 			
 		 		else if(num == 3) {
-		 			System.out.println("3¹ø È£Ãâ");
+		 			System.out.println("3ë²ˆ í˜¸ì¶œ");
 		 			SumAndAvg cal3 = new SumAndAvg(); 
 		 			cal3.question3();
 		 			break;
 		 		}
 			
 		 		else if(num == 4) {
-		 			System.out.println("4¹ø È£Ãâ");
+		 			System.out.println("4ë²ˆ í˜¸ì¶œ");
 		 			GuGuDan cal4 = new GuGuDan(); 
 		 			cal4.question4();
 		 			break;
 		 		}
 			
 		 		else if(num == 5) {
-		 			System.out.println("5¹ø È£Ãâ");
+		 			System.out.println("5ë²ˆ í˜¸ì¶œ");
 		 			GuGuDan2 cal5 = new GuGuDan2(); 
 		 			cal5.question5();
 		 			break;
 		 		}
 			
 		 		else if(num == 6) {  
-		 			System.out.println("6¹ø È£Ãâ-Á¾·á");
+		 			System.out.println("6ë²ˆ í˜¸ì¶œ-ì¢…ë£Œ");
 		 			System.exit(0);
 		 		}
 				
 		 		else
-		 			System.out.println("1~6¹ø »çÀÌ¿¡  ÀÔ·ÂÇÏ¼Å¾ßÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+		 			System.out.println("1~6ë²ˆ ì‚¬ì´ì— ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 					continue;
 							
 		}

@@ -5,24 +5,24 @@ import java.util.*;
 public class SumOfNumbers {
 	public void question1() {
 
-		System.out.println("### 1ºÎÅÍ ÀÔ·ÂÇÑ ¼ö±îÁö ´õÇÏ±â ###");
+		System.out.println("### 1ë¶€í„° ì…ë ¥í•œ ìˆ˜ê¹Œì§€ ë”í•˜ê¸° ###");
 		Scanner su1 = new Scanner(System.in);
 		
 		while(true) {
 			
-		System.out.print("¸¶Áö¸· ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(Q:Á¾·á) >>> ");	
+		System.out.print("ë§ˆì§€ë§‰ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”(Q:ì¢…ë£Œ) >>> ");	
 		String answer1 = su1.nextLine();
 		
 		
 		if(answer1.equalsIgnoreCase("Q")) 
 		{
-				System.out.println("Á¾·áÇÕ´Ï´Ù");
+				System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤");
 				System.exit(0);
 		}
 		
-		if(!answer1.matches("^[0-9]*$"))		//¼ıÀÚ°¡ ¾Æ´Ñ ´Ù¸¥ °ÍÀ» ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+		if(!answer1.matches("^[0-9]*$"))		//ìˆ«ìê°€ ì•„ë‹Œ ë‹¤ë¥¸ ê²ƒì„ ì…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 		{
-			System.out.println("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À");
+			System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤");
 			continue;
 		}
 		
@@ -42,7 +42,7 @@ public class SumOfNumbers {
 		{
 			result1 += i;
 		}
-		System.out.println("ÃÑ ÇÕÀº " + result1 + "ÀÔ´Ï´Ù.");
+		System.out.println("ì´ í•©ì€ " + result1 + "ì…ë‹ˆë‹¤.");
 		return result1;
 	
 	}

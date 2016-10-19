@@ -5,18 +5,18 @@ import java.util.*;
 public class GuGuDan2 {
 	public void question5() {
 		
-		System.out.println("### Â¦¼ö´Ü È¦¼ö´Ü Ãâ·ÂÇÏ±â  ###");
+		System.out.println("### ì§ìˆ˜ë‹¨ í™€ìˆ˜ë‹¨ ì¶œë ¥í•˜ê¸°  ###");
 		Scanner input = new Scanner(System.in);
 		
 		String value = null;
 		
 		while(true){
-				System.out.print("E:Â¦¼ö´Ü, O:È¦¼ö´Ü(Q:Á¾·á) >>> ");
+				System.out.print("E:ì§ìˆ˜ë‹¨, O:í™€ìˆ˜ë‹¨(Q:ì¢…ë£Œ) >>> ");
 				value = input.nextLine();
 				
 				if(value.equalsIgnoreCase("Q")) 
 				{
-					System.out.println("Á¾·áÇÕ´Ï´Ù.");	
+					System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");	
 					System.exit(0);
 				}
 
@@ -27,7 +27,7 @@ public class GuGuDan2 {
 					{
 						for(int j = 2; j<=9; j+=2)
 						{
-							System.out.print(j + " * " + i + " = " + i*j + "\t"); 	//°öÇÏ·Á´Â ¼ö 1~9±îÁö¸¦  tabÅ°¸¦ ´­·¯¼­ ¹Ýº¹ ¼öÇà
+							System.out.print(j + " * " + i + " = " + i*j + "\t"); 	//ê³±í•˜ë ¤ëŠ” ìˆ˜ 1~9ê¹Œì§€ë¥¼  tabí‚¤ë¥¼ ëˆŒëŸ¬ì„œ ë°˜ë³µ ìˆ˜í–‰
 						}				
 						System.out.println();
 					}					
@@ -40,7 +40,7 @@ public class GuGuDan2 {
 					{
 						for(int j = 3; j<=9; j+=2)
 						{
-							System.out.print(j + " * " + i + " = " + i*j + "\t");	//°öÇÏ·Á´Â ¼ö 1~9±îÁö¸¦  tabÅ°¸¦ ´­·¯¼­ ¹Ýº¹ ¼öÇà
+							System.out.print(j + " * " + i + " = " + i*j + "\t");	//ê³±í•˜ë ¤ëŠ” ìˆ˜ 1~9ê¹Œì§€ë¥¼  tabí‚¤ë¥¼ ëˆŒëŸ¬ì„œ ë°˜ë³µ ìˆ˜í–‰
 						}				
 						System.out.println();
 					}					
@@ -48,9 +48,9 @@ public class GuGuDan2 {
 				}
 				
 				else
-				if(value.matches("^[a-zA-Z0-9°¡-ÆR]*$"))		//¿µ¹®ÀÚ, ÇÑ±Û, ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+				if(value.matches("^[a-zA-Z0-9ê°€-R]*$"))		//ì˜ë¬¸ìž, í•œê¸€, ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 				{
-					System.out.println("´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+					System.out.println("ë‹¤ì‹œ ìž…ë ¥í•˜ì‹­ì‹œì˜¤.");
 					continue;
 				}
 				input.close();

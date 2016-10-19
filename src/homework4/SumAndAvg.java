@@ -5,7 +5,7 @@ import java.util.*;
 public class SumAndAvg {
 	public void question3() {
 	
-		System.out.println("### ÀÔ·Â¹ŞÀº ¼ıÀÚÀÇ ÇÕ°è¿Í Æò±Õ ±¸ÇÏ±â ###");
+		System.out.println("### ì…ë ¥ë°›ì€ ìˆ«ìì˜ í•©ê³„ì™€ í‰ê·  êµ¬í•˜ê¸° ###");
 		Scanner input = new Scanner(System.in);
 		
 		String value = null;
@@ -15,26 +15,26 @@ public class SumAndAvg {
 		int count = 0;
 		
 		while(true){
-			System.out.print("¼ıÀÚ¸¦ ÀÔ·Â(Q:Á¾·á) >>> ");
+			System.out.print("ìˆ«ìë¥¼ ì…ë ¥(Q:ì¢…ë£Œ) >>> ");
 			value = input.nextLine();
 			
 			if(value.equalsIgnoreCase("Q")) 
 			{
-				System.out.println("ÇÕ°è´Â " + sum + "ÀÌ°í, Æò±ÕÀº " + avg2 + "ÀÔ´Ï´Ù.");		
+				System.out.println("í•©ê³„ëŠ” " + sum + "ì´ê³ , í‰ê· ì€ " + avg2 + "ì…ë‹ˆë‹¤.");		
 				break;	
 			}
 			
-			if(!value.matches("^[0-9]*$"))		//¼ıÀÚ°¡ ¾Æ´Ñ ´Ù¸¥ °ÍÀ» ÀÔ·ÂÇÏ¿´À» ¶§ÀÇ Á¤±ÔÇ¥Çö½Ä »ç¿ë
+			if(!value.matches("^[0-9]*$"))		//ìˆ«ìê°€ ì•„ë‹Œ ë‹¤ë¥¸ ê²ƒì„ ì…ë ¥í•˜ì˜€ì„ ë•Œì˜ ì •ê·œí‘œí˜„ì‹ ì‚¬ìš©
 			{
-				System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿À.");
+				System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹­ì‹œì˜¤.");
 				continue;
 			}
 			
 			int num = Integer.parseInt(value);	
 			sum += num;
-			count++;		//ÀÔ·ÂÇÑ ¼ıÀÚÀÇ ¼ö¸¦ °è¼Ó count¸¦ ÇØ¼­ ´©Àû½ÃÅ²´Ù. -> ³ªÁß¿¡ Æò±Õ °è»êÀ» ÇÏ±â À§ÇØ¼­ »ç¿ë	
+			count++;		//ì…ë ¥í•œ ìˆ«ìì˜ ìˆ˜ë¥¼ ê³„ì† countë¥¼ í•´ì„œ ëˆ„ì ì‹œí‚¨ë‹¤. -> ë‚˜ì¤‘ì— í‰ê·  ê³„ì‚°ì„ í•˜ê¸° ìœ„í•´ì„œ ì‚¬ìš©	
 			avg = sum / count;
-			avg2 = Double.parseDouble(String.format("%.2f",avg));		//avgÀÇ °ªÀ» ¼Ò¼öÁ¡ µÑÂ°Â¥¸®±îÁö Ç¥ÇöÇÏ±â À§ÇØ »ç¿ë
+			avg2 = Double.parseDouble(String.format("%.2f",avg));		//avgì˜ ê°’ì„ ì†Œìˆ˜ì  ë‘˜ì§¸ì§œë¦¬ê¹Œì§€ í‘œí˜„í•˜ê¸° ìœ„í•´ ì‚¬ìš©
 			
 		}
 		input.close();
