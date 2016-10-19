@@ -30,7 +30,7 @@ public class ExamForWhile {
 			System.out.print("원하는 메뉴는  무엇입니까? >>> ");
 			String select = su.nextLine();
  		
-				if(!select.matches("^[0-9]*$"))		//영문자, 한글, 숫자를 입력하였을 때의 정규표현식 사용
+				if(!select.matches("^[0-9]*$"))		//숫자가 아닌 다른 것을 입력하였을 때의 정규표현식 사용
 				{
 					System.out.println("숫자를 입력하셔야 합니다. 다시 입력하십시오");
 					continue;
