@@ -25,54 +25,64 @@ public class ExamForWhile {
 		
 		Scanner su = new Scanner(System.in);
 		System.out.print("\n");
-		System.out.print("원하는 메뉴는  무엇입니까? >>> ");
-		int select = su.nextInt();
-		count(select);
-		su.close(); 
 		
-	}
-	
-	 public void count(int select) {
+		while(true) {
+			System.out.print("원하는 메뉴는  무엇입니까? >>> ");
+			String select = su.nextLine();
+ 		
+				if(!select.matches("^[0-9]*$"))		//영문자, 한글, 숫자를 입력하였을 때의 정규표현식 사용
+				{
+					System.out.println("숫자를 입력하셔야 합니다. 다시 입력하십시오");
+					continue;
+				}
 
-		 		if(select == 1) {
+				int num = Integer.parseInt(select);
+				if(num == 1) {
 		 			System.out.println("1번 호출");
 				    SumOfNumbers cal1 = new SumOfNumbers();
 				    cal1.question1();
+				    break;
 		 		}
 			
-		 		else if(select == 2) {
+		 		else if(num == 2) {
 		 			System.out.println("2번 호출");
 		 			MaxAndMin cal2 = new MaxAndMin();
 		 			cal2.question2();
+		 			break;
 		 		}
 			
-		 		else if(select == 3) {
+		 		else if(num == 3) {
 		 			System.out.println("3번 호출");
 		 			SumAndAvg cal3 = new SumAndAvg(); 
 		 			cal3.question3();
+		 			break;
 		 		}
 			
-		 		else if(select == 4) {
+		 		else if(num == 4) {
 		 			System.out.println("4번 호출");
 		 			GuGuDan cal4 = new GuGuDan(); 
 		 			cal4.question4();
+		 			break;
 		 		}
 			
-		 		else if(select ==5) {
+		 		else if(num == 5) {
 		 			System.out.println("5번 호출");
 		 			GuGuDan2 cal5 = new GuGuDan2(); 
 		 			cal5.question5();
+		 			break;
 		 		}
 			
-		 		else if(select ==6) {  
+		 		else if(num == 6) {  
 		 			System.out.println("6번 호출-종료");
 		 			System.exit(0);
 		 		}
-		 		
+				
 		 		else
-		 			System.out.println("1~6까지의 해당 번호만 입력할 수 있습니다. 다시 입력하십시오.");
-		 			System.exit(select);
-	 }
-		 	
-		 	
+		 			System.out.println("1~6번 사이에  입력하셔야합니다. 다시 입력하십시오.");
+					continue;
+							
+		}
+		su.close(); 
+	}
+ 	
 }
