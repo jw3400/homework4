@@ -30,6 +30,7 @@ public class GuGuDan {
 				if(!(num>=2 && num<=9))
 				{
 					System.out.println("잘못 입력하셨습니다. 2~9단까지 가능합니다.");
+					continue;
 				}
 				else
 				{
@@ -37,7 +38,7 @@ public class GuGuDan {
 					{
 						if(i%2 == 1) 
 						{
-							System.out.print (num + " * " + i + " = " + num*i + "\t");		//곱하려는 수가 홀수일 때 Tab문자 적용  
+							System.out.print(num + " * " + i + " = " + num*i + "\t");		//곱하려는 수가 홀수일 때 Tab문자 적용  
 						}
 						else					
 						System.out.println(num + " * " + i + " = " + num*i );					//곱하려는 수가 짝수일 때 줄바꿈을 적용
