@@ -7,9 +7,9 @@ public class ExamForWhile {
 		
 	public static void main(String[] args) {
 		
-		System.out.println("*************************************");
-		System.out.println("                          반복문 연습하기1                              ");
-		System.out.println("*************************************");
+		System.out.println("******************************************");
+		System.out.println("               반복문 연습하기1                    ");
+		System.out.println("******************************************");
 		System.out.println("    1.  1부터 입력한 수까지 더하기 ");
 		System.out.println("    2.  최대값/최소값 구하기");
 		System.out.println("    3.  입력받은 숫자의 합계와 평균 구하기");
